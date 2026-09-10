@@ -1,0 +1,24 @@
+# ESM-2 / ESMFold environment (fair-esm). Covers: esm2_ladder_embed, esm2_variant_score,
+# variant_rediscovery_benchmark, local_residue_divergence, make_figures.
+# Base image ships PyTorch + CUDA so the RTX A5000 works out of the box.
+FROM pytorch/pytorch:2.3.1-cuda12.1-cudnn8-runtime
+
+WORKDIR /workspace
+ENV TORCH_HOME=/workspace/.cache/torch \
+    HF_HOME=/workspace/.cache/hf \
+    PYTHONUNBUFFERED=1
+
+RUN apt-get update && apt-get install -y --no-install-recommends git curl \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN pip install --no-cache-dir \
+      numpy pandas scipy matplotlib biopython requests \
+      fair-esm \
+      "transformers>=4.40,<5" accelerate    # HF ESMFold backend; pin <5 (transformers 5.x
+                                            # mis-detects torch 2.3 and breaks EsmForProteinFolding)
+
+# ESMFold (local, full-length AHR2) needs openfold, whose CUDA ops are heavy to build.
+# For most work use `esmfold_predict.py --backend api` (short targets) or add openfold here
+# only when you specifically need local full-length folding. See docker/README_ja.md.
+
+CMD ["/bin/bash"]

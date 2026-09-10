@@ -1,0 +1,21 @@
+# ESM-3 (1.4B open) environment — EvolutionaryScale `esm` package.
+# SEPARATE from the fair-esm image on purpose: both use `import esm` and cannot coexist.
+FROM pytorch/pytorch:2.3.1-cuda12.1-cudnn8-runtime
+
+WORKDIR /workspace
+ENV TORCH_HOME=/workspace/.cache/torch \
+    HF_HOME=/workspace/.cache/hf \
+    PYTHONUNBUFFERED=1
+
+RUN apt-get update && apt-get install -y --no-install-recommends git curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# `esm` here is EvolutionaryScale ESM-3 (PyPI package `esm`, v3+), NOT fair-esm.
+RUN pip install --no-cache-dir \
+      numpy pandas scipy matplotlib biopython requests \
+      "esm>=3.1" huggingface_hub
+
+# ESM-3 open weights require accepting the license on HuggingFace and logging in:
+#   huggingface-cli login          (run inside the container, or mount ~/.cache/huggingface)
+# then run analysis/esm3_embed.py --device cuda ...
+CMD ["/bin/bash"]

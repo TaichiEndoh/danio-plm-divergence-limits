@@ -1,0 +1,20 @@
+claim,abstract,recomputed,pass
+"3,428 ortholog pairs","3,428","3,428",True
+"5,614 proteins","5,614","5,614",True
+"Spearman rho(ESM-2 8M, ESM-3) = 0.881",0.881,0.881,True
+95% CI 0.870-0.891,0.870-0.891,0.870-0.891,True
+absolute distances are not comparable between spaces,not equal,median(d8)/median(d3) = 6x,True
+"rho(8, ESM-3) = 0.881",0.881,0.881,True
+"rho(35, ESM-3) = 0.883",0.883,0.883,True
+"rho(150, ESM-3) = 0.885",0.885,0.885,True
+"rho(650, ESM-3) = 0.858",0.858,0.858,True
+identity baseline recovers 8.8% of the ESM-3 top-1%,8.8%,8.8%,True
+identity baseline recovers 62.0% of the ESM-3 top-5%,62.0%,62.0%,True
+identity baseline recovers 76.4% of the ESM-3 top-10%,76.4%,76.4%,True
+only >=150M exceeds the baseline at every threshold; the smallest does not,as stated,verified against all four checkpoints,True
+the cap affects 22% of pairs,22%,22% (n=766),True
+"the cap is 2,046 residues","2,046",2046,True
+all twenty highest-divergence residues fall in the two substitution windows,all twenty,20/20,True
+Q19L and D176G are not themselves the top two (stated in 3.2),ranks 10 and 16 of 338,ranks 10 and 16 of 338,True
+ligand pocket 100% identical,100.0%,100.0%,True
+PAS fold 3 100% identical,100.0%,100.0%,True

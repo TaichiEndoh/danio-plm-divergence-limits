@@ -1,0 +1,49 @@
+# Two GPU services: `esm2` (fair-esm) and `esm3` (EvolutionaryScale esm).
+# Kept separate because both packages import as `esm` and conflict.
+#
+#   docker compose -f docker/docker-compose.yml build
+#   docker compose -f docker/docker-compose.yml run --rm esm2   # shell in ESM-2 env
+#   docker compose -f docker/docker-compose.yml run --rm esm3   # shell in ESM-3 env
+#
+# Requires Docker Desktop (WSL2 backend) + a current NVIDIA Windows driver so `gpus` works.
+services:
+  esm2:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.esm2
+    image: zae-esm2
+    volumes:
+      - ..:/workspace
+      - hf-cache:/workspace/.cache/hf
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  esm3:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.esm3
+    image: zae-esm3
+    volumes:
+      - ..:/workspace
+      - hf-cache:/workspace/.cache/hf
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+volumes:
+  hf-cache:

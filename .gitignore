@@ -1,0 +1,53 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- Secrets / env ----
+.env
+.env.*
+!.env.example
+
+# ---- Large data & model artifacts (keep out of git) ----
+data/**
+!data/README.md
+!data/.gitignore
+*.fasta
+*.fa
+*.pdb
+*.cif
+*.npy
+*.npz
+*.pt
+*.ckpt
+*.h5
+*.gz
+*.zip
+# allow small curated tables to be committed explicitly with `git add -f`
+
+# ---- Node / Next.js (if a web/ app is added later) ----
+node_modules/
+.next/
+out/
+.vercel/
+.turbo/
+*.tsbuildinfo
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# ---- Committed baseline/reference data (small; ported from the previous paper) ----
+# These exceptions come last so they win over data/** and *.fasta above.
+!data/reference/
+!data/reference/**
+
