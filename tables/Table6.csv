@@ -1,0 +1,5 @@
+Kcnj13 feature,UniProtKB source interval,Mapped RefSeq interval,"Eligible centers, n",Mean local divergence
+Transmembrane helix 1 (TM1),66–89,62–85,24,2.98 × 10⁻⁸
+Transmembrane helix 2 (TM2),146–170,142–166,25,1.05 × 10⁻⁴
+Inward-rectifier transmembrane domain,46–175,42–171,130,9.06 × 10⁻⁵
+Kir C-terminal domain,182–319,178–315,138,1.08 × 10⁻⁴

@@ -1,0 +1,3 @@
+Protein,"Matched centers, n","Confident-core centers, n",Overall Spearman ρ,Confident-core Spearman ρ,Core RMSD (Å)
+AHR2,"1,001",221,0.385,−0.040,2.222
+Kcnj13,338,268,0.093,−0.018,1.083

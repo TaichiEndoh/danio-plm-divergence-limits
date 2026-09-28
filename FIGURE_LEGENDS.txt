@@ -1,0 +1,39 @@
+Figure 1. Study design
+
+Recorded inputs, overlapping selection categories, the primary untruncated analysis and two residue case studies. The 50,921-pair sampling frame is the deduplicated archived export. Agreement between models is evaluated separately from functional validity.
+
+Figure 2. Whole-protein rank concordance
+
+(a) ESM-2 8M and ESM-3 rank percentiles in the primary sample of 2,662 pairs. Average ranks retain ties and all recorded distances, including zero or slightly negative numerical residuals. The 95% interval uses 2,000 connected-component bootstrap draws and is conditional on the selected sample. (b) Observed correlation with ESM-3 for four ESM-2 checkpoints in the primary sample and full selected union. Lines connect checkpoints for readability and do not represent a fitted scaling law.
+
+Figure 3. Top-k agreement with ESM-3
+
+Overlap for four ESM-2 checkpoints and sequence divergence in (a) the primary sample and (b) the full selected union. The displayed k follows rounding of the indicated fraction of the sample size; exact score ties use saved input order. Dashed segments show k/N, the expectation under independent random rankings. The outcome is agreement with ESM-3, not experimental candidate-selection performance. At primary top-1%, the 8M and sequence-identity overlaps correspond to four and three pairs, respectively.
+
+Figure 4. Residue profiles and input uncertainty
+
+(a,b) ESM-2 8M distances from separately embedded complete 21-residue windows; (c,d) ESM-3 distances from full-sequence token embeddings. Axes have different distance scales because these are different measurements. Red vertical lines in AHR2 mark the six unresolved X positions in the partner input. Shading in Kcnj13 marks complete-window centers containing Q19L or D176G. The ESM-3 terminal peak is adjacent to the sequence-record offset; its cause has not been isolated by matched-input inference.
+
+Figure 5. Divergence and prediction confidence
+
+(a,b) Corrected ESM-2 residue distances against reference-species pLDDT. (c,d) Mean distances grouped by the annotated AHR pocket and otherwise by pLDDT; counts refer to eligible centers. Pocket annotation takes precedence over confidence bins. Kcnj13 has no annotated pocket tier in this analysis and no centers below pLDDT 50. Low confidence is not direct evidence of intrinsic disorder, and the mean gradient does not describe the medians.
+
+Figure 6. Mapped feature intervals
+
+Mean corrected ESM-2 distance in retained annotated intervals of (a) AHR2 and (b) Kcnj13. All displayed coordinates are in the saved reference numbering. Kcnj13 source intervals 66–89, 146–170, 46–175 and 182–319 map to 62–85, 142–166, 42–171 and 178–315, respectively. TM1 and TM2 are separate features despite sharing a source label. Overlapping domains and helices are not a partition. The AHR2 PAS-fold mean is zero despite small signed numerical residuals. Full source snapshots were not retained, so these are the saved operational annotations rather than a fresh database retrieval.
+
+Figure S1. Corrected between-prediction structural comparison
+
+Local ESM-2 distance versus Cα deviation after a Kabsch fit on matched residues with both pLDDT values >70. AHR2 has 1,001 matched centers, including 221 in the confident core; Kcnj13 has 338 and 268. Overall/core correlations are 0.385/−0.040 and 0.093/−0.018, respectively. Gray points lie outside the confident core. Six AHR2 centers lack partner Cα coordinates at unresolved X positions. These comparisons do not estimate prediction variance or distinguish it from genuine structural differences.
+
+Figure S2. Archived variant percentile summaries
+
+Retained (a) wild-type-marginal and (b) masked-marginal summaries across four ESM-2 checkpoints. Lower percentiles indicate more negative scores relative to the archived within-protein substitution distribution. Gray cells and dashes denote missing results; they are not zero. Each row is a variant and multiple rows can belong to the same protein. Full substitution-score arrays were not retained, preventing independent reconstruction of these percentiles. No threshold for functional recovery is defined.
+
+Figure S3. Archived baseline distance distribution
+
+Recorded ESM-2 8M distances for 50,921 unique pairs after deduplication and recovery of the malformed exported value from its duplicate. The count axis is logarithmic. Historical input and cache fingerprints are incomplete; the distribution is a retained sampling frame, not a new inference run.
+
+Figure S4. AHR2 window profile and unresolved residues
+
+Corrected ESM-2 complete-window profile with operational bHLH, PAS-A and PAS-fold intervals in green. Red bands identify centers within ten residues of an X in the saved partner sequence. Excluding these bands is a sensitivity analysis of recorded profiles; it does not resolve the underlying amino acids or remove X from ESM-3 full-sequence context.

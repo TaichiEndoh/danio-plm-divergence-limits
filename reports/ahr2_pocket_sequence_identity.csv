@@ -1,0 +1,9 @@
+region,start,end,n_residues,n_identical,percent_identical
+"curated ligand pocket (Takeda, 18 residues)",,,18,18,100.0
+"bHLH, DNA binding",25,86,62,60,96.7741935483871
+PAS-A,119,231,113,110,97.34513274336283
+PAS domain (wider),277,385,109,109,100.0
+"PAS fold 3, ligand-binding",308,385,78,78,100.0
+C-terminal transactivation domain,386,1027,642,588,91.58878504672897
+# whole-protein identity,93.1840
+# zebrafish=NP_571339, aesculapii=XP_056303610, aligned_length=1027

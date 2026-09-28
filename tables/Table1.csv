@@ -1,0 +1,5 @@
+Analysis set,"Protein pairs, n",Spearman ρ,95% confidence interval
+Untruncated primary set,"2,662",0.909,0.897–0.921
+Full selected union,"3,428",0.881,0.846–0.908
+Full union excluding pairs containing nonstandard residues,"3,256",0.905,0.876–0.923
+Untruncated set excluding pairs containing nonstandard residues,"2,562",0.924,0.913–0.933

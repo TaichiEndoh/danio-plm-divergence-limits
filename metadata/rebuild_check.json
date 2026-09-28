@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "recomputed_statistics_equal": true,
+  "all_ten_figure_hashes_equal": true,
+  "new_model_inference": false,
+  "environment": "same pinned saved-output environment used for manuscript revision; not an independent environment validation"
+}

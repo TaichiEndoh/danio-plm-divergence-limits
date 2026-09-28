@@ -1,0 +1,11 @@
+{
+  "version": "v0.1.0-review.20260928",
+  "manuscript_title": "Cross-model concordance and input-quality limits of protein language model divergence in two Danio species",
+  "manuscript_sha256": "beebc5dcadbb7463048ce00c171adef3a6cd69df208a6d04b816074a5f3340a8",
+  "source_commit": "9ad2422605b9cca035a3e87ac7d0987fe75c049f",
+  "source_includes_uncommitted_revisions": true,
+  "copied_file_hashes_authoritative": true,
+  "model_reinference_performed_for_release": false,
+  "repository_visibility": "private",
+  "doi": null
+}

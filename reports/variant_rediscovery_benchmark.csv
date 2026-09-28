@@ -1,0 +1,34 @@
+control_class,protein,variant,scoring,model,known_score,n_substitutions,percentile_most_impactful
+cautionary (non-conservation-driven),HBB_HUMAN_mature,E6V,masked-marginal,esm2_t6_8M_UR50D,-1.8901,2774,13.91
+cautionary (non-conservation-driven),HBB_HUMAN_mature,E6V,masked-marginal,esm2_t12_35M_UR50D,-2.3434,2774,11.43
+cautionary (non-conservation-driven),HBB_HUMAN_mature,E6V,masked-marginal,esm2_t30_150M_UR50D,-1.2403,2774,77.54
+cautionary (non-conservation-driven),HBB_HUMAN_mature,E6V,wt-marginal,esm2_t6_8M_UR50D,-5.137,2774,16.04
+cautionary (non-conservation-driven),HBB_HUMAN_mature,E6V,wt-marginal,esm2_t12_35M_UR50D,-5.485,2774,15.61
+cautionary (non-conservation-driven),HBB_HUMAN_mature,E6V,wt-marginal,esm2_t30_150M_UR50D,-4.9817,2774,72.6
+cautionary (non-conservation-driven),HBB_HUMAN_mature,E6V,wt-marginal,esm2_t33_650M_UR50D,-5.1734,2774,81.4
+cautionary (non-conservation-driven),RHO_BOVIN,A292S,masked-marginal,esm2_t6_8M_UR50D,-0.2187,6612,72.63
+cautionary (non-conservation-driven),RHO_BOVIN,A292S,masked-marginal,esm2_t12_35M_UR50D,-0.0346,6612,83.14
+cautionary (non-conservation-driven),RHO_BOVIN,A292S,masked-marginal,esm2_t30_150M_UR50D,-1.758,6612,73.96
+cautionary (non-conservation-driven),RHO_BOVIN,A292S,wt-marginal,esm2_t6_8M_UR50D,-3.8776,6612,66.21
+cautionary (non-conservation-driven),RHO_BOVIN,A292S,wt-marginal,esm2_t12_35M_UR50D,-4.0757,6612,70.89
+cautionary (non-conservation-driven),RHO_BOVIN,A292S,wt-marginal,esm2_t30_150M_UR50D,-4.9707,6612,75.86
+cautionary (non-conservation-driven),RHO_BOVIN,A292S,wt-marginal,esm2_t33_650M_UR50D,-4.5206,6612,94.36
+cautionary (non-conservation-driven),RHO_BOVIN,E122Q,masked-marginal,esm2_t6_8M_UR50D,0.3176,6612,84.82
+cautionary (non-conservation-driven),RHO_BOVIN,E122Q,masked-marginal,esm2_t12_35M_UR50D,-3.6618,6612,35.48
+cautionary (non-conservation-driven),RHO_BOVIN,E122Q,masked-marginal,esm2_t30_150M_UR50D,0.2961,6612,92.5
+cautionary (non-conservation-driven),RHO_BOVIN,E122Q,wt-marginal,esm2_t6_8M_UR50D,-3.8366,6612,67.11
+cautionary (non-conservation-driven),RHO_BOVIN,E122Q,wt-marginal,esm2_t12_35M_UR50D,-4.4587,6612,64.46
+cautionary (non-conservation-driven),RHO_BOVIN,E122Q,wt-marginal,esm2_t30_150M_UR50D,-3.631,6612,88.94
+cautionary (non-conservation-driven),RHO_BOVIN,E122Q,wt-marginal,esm2_t33_650M_UR50D,-5.1004,6612,92.85
+conserved functional site,HRAS_HUMAN,G12D,wt-marginal,esm2_t6_8M_UR50D,-4.2879,3591,66.17
+conserved functional site,HRAS_HUMAN,G12D,wt-marginal,esm2_t12_35M_UR50D,-6.5383,3591,46.42
+conserved functional site,HRAS_HUMAN,G12D,wt-marginal,esm2_t30_150M_UR50D,-11.9805,3591,14.4
+conserved functional site,HRAS_HUMAN,G12D,wt-marginal,esm2_t33_650M_UR50D,-12.1629,3591,27.51
+conserved functional site,HRAS_HUMAN,G12V,wt-marginal,esm2_t6_8M_UR50D,-4.0071,3591,71.48
+conserved functional site,HRAS_HUMAN,G12V,wt-marginal,esm2_t12_35M_UR50D,-7.0834,3591,40.21
+conserved functional site,HRAS_HUMAN,G12V,wt-marginal,esm2_t30_150M_UR50D,-10.9151,3591,23.5
+conserved functional site,HRAS_HUMAN,G12V,wt-marginal,esm2_t33_650M_UR50D,-12.5558,3591,24.03
+conserved functional site,TP53_HUMAN,R175H,wt-marginal,esm2_t6_8M_UR50D,-3.9502,7467,46.52
+conserved functional site,TP53_HUMAN,R175H,wt-marginal,esm2_t12_35M_UR50D,-3.9036,7467,53.78
+conserved functional site,TP53_HUMAN,R175H,wt-marginal,esm2_t30_150M_UR50D,-8.6495,7467,12.41
+conserved functional site,TP53_HUMAN,R175H,wt-marginal,esm2_t33_650M_UR50D,-9.1293,7467,19.22

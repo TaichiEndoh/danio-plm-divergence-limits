@@ -1,0 +1,168 @@
+{
+  "generator": "analysis/revision_figures.py",
+  "generator_sha256": "528076924ae772d278126a551ba63f343330d484fda065942ff8ffed876b6e64",
+  "inputs_sha256": {
+    "reports/paper_revision/pair_table.csv": "b0d0959df75526fbc8c05620e3a2f0b7987f0c8a0f1eab8bea8c1e36e33601e8",
+    "reports/paper_revision/ranking.json": "187598427712bab7defd80bbeb6fa4df1cc8b492d78ca4069041bfd276ba36e5",
+    "analysis/tier_stratification.py": "909672090021910baaa018620574d3e2e61bf6856b858b3851917a13012e2b20",
+    "analysis/ahr_pocket_axis.py": "ad79f5f96a717e30ff5c0aa6b516840c15819e3e214fd5f55a3f872c027d43d3",
+    "reports/ahr2_residue_divergence_fixed.csv": "00296699cc709e9edfa202aa73177432f2222432c04db8eb8a002aae53c00362",
+    "reports/kcnj13_residue_divergence_fixed.csv": "d927b20dda07455ea06ef09ba5bb0bacaf7867ae30cb6d3788d519b9bfaddba1",
+    "reports/ahr2_residue_divergence_esm3.csv": "45987a472b25c582cc27d099e725dafdb5d9df67578a96c60f8d5d6690f593e9",
+    "reports/kcnj13_residue_divergence_esm3.csv": "dea5be900c4a0899a8453f278cb937bb881eb8474111b6bf094f5e98f1e2eae8",
+    "reports/ahr2_esmfold.pdb": "b8686bf9eb2f613176282ba0745e6f76f0aedf21eb1856e4ee4f6141734114ae",
+    "reports/kcnj13_esmfold.pdb": "42bd7009f428b4c14ba283702d304f839a501fe7f7e32489d1ae20fe5cb57fc9",
+    "reports/feature_divergence.csv": "aaf7cd55ca467eb18649da47f468e58636b363ca96c38108645cd235cc3e05ea",
+    "reports/figures/ahr2_plm_vs_structure.csv": "36ed5191e158fd5a955ed447bb5a522f51ca71c0558e89667b9f98e64afe566a",
+    "reports/figures/kcnj13_plm_vs_structure.csv": "bb1e1bc96999365a99791b3ea68fb7aac873077d5adfacc8bd1984b875a43078",
+    "reports/variant_rediscovery_benchmark.csv": "038f955476760e0c7ff10d84a9338f5de852334290255d4f311e1eb018d48926",
+    "data/reference/esm2_8m_pair_distances_dedup.csv": "3d0bc448e12cc0d0989ea29c61d5e6251bb2852ef443bf994576dce69ee82800"
+  },
+  "outputs_sha256": {
+    "Figure1_study_design.png": "b8451f9b1b51ea6d7120a49715599c7a95c2445143e29510ac1a2ecdf85f6e7a",
+    "Figure2_scale_robustness.png": "85828d29f78c282dd6440f23f40398e6bba5d4c2cae8edb4289f2181ecc01cd2",
+    "Figure3_prioritization.png": "de225670fed4412e841cf052f586ce40e29374d31b0aeaa16c66020ec34d0330",
+    "Figure4_hotspots_and_axes.png": "cba2add445c11d747e3f985338896473bd971e54fdcaf79bb165f24d74fc1b86",
+    "Figure5_structural_grounding.png": "6fdd97553fdffeaaf33da8a6a2235ddf7c00deee607940645497af81515da921",
+    "Figure6_feature_annotation.png": "135879e68e1112908cd40edc9315c11992888a46797f69bc6e226cc3c06e4f03",
+    "FigureS1_rmsd_control.png": "23bcd7da90d72d8c6b3137061b838a5ada84be7a80a5c9ecf6ed0e38692cfdb3",
+    "FigureS2_variant_rediscovery.png": "b2993246145a54bb206ab1bc30a607ddf24a378ffdc092b503a9646fee12c34d",
+    "FigureS3_baseline_distribution.png": "38def80ab8dc39d85247b3369831c7cc7c737b4fad5a6f67e541c9c72d83e041",
+    "FigureS4_ahr2_residue_profile.png": "6bf8ac07c6f4a9f1470690aca3cbcfd5e2571019044a48bf599e5cb3e7e0b43e"
+  },
+  "metrics": {
+    "ahr2_tiers": {
+      "Pocket": {
+        "n": 18,
+        "mean": 0.00012072589662339443
+      },
+      "\u226570": {
+        "n": 212,
+        "mean": 0.0009567633552371149
+      },
+      "50\u2013<70": {
+        "n": 78,
+        "mean": 0.002744194788810519
+      },
+      "<50": {
+        "n": 699,
+        "mean": 0.00740846424484795
+      }
+    },
+    "kcnj13_tiers": {
+      "\u226570": {
+        "n": 281,
+        "mean": 0.0002768379089246803
+      },
+      "50\u2013<70": {
+        "n": 57,
+        "mean": 0.00017064600660089297
+      }
+    },
+    "features": [
+      {
+        "protein": "AHR2",
+        "feature": "bHLH (DNA binding) (25-86)",
+        "source_interval": "25-86",
+        "mapped_interval": "25-86",
+        "n": 62,
+        "mean": 0.001719215223866,
+        "median": 0.0018664002418517
+      },
+      {
+        "protein": "AHR2",
+        "feature": "PAS-A (119-231)",
+        "source_interval": "119-231",
+        "mapped_interval": "119-231",
+        "n": 113,
+        "mean": 0.0027453720042135,
+        "median": 0.0015743374824523
+      },
+      {
+        "protein": "AHR2",
+        "feature": "PAS-B (ligand pocket) (308-385)",
+        "source_interval": "308-385",
+        "mapped_interval": "308-385",
+        "n": 78,
+        "mean": 0.0,
+        "median": 0.0
+      },
+      {
+        "protein": "AHR2",
+        "feature": "C-terminal TAD (386-1027)",
+        "source_interval": "386-1027",
+        "mapped_interval": "386-1027",
+        "n": 632,
+        "mean": 0.0068611137663261,
+        "median": 0.0048629045486449
+      },
+      {
+        "protein": "AHR2",
+        "feature": "(unannotated / linker)",
+        "source_interval": "",
+        "mapped_interval": "",
+        "n": 122,
+        "mean": 0.0069223632577989,
+        "median": 1.1920928955078125e-07
+      },
+      {
+        "protein": "Kcnj13",
+        "feature": "Domain: Potassium channel inwardly rectifying transmembrane (42-171)",
+        "source_interval": "46-175",
+        "mapped_interval": "42-171",
+        "n": 130,
+        "mean": 9.063436434818934e-05,
+        "median": 0.0
+      },
+      {
+        "protein": "Kcnj13",
+        "feature": "Transmembrane: Helical (62-85)",
+        "source_interval": "66-89",
+        "mapped_interval": "62-85",
+        "n": 24,
+        "mean": 2.9802322387695312e-08,
+        "median": 0.0
+      },
+      {
+        "protein": "Kcnj13",
+        "feature": "Transmembrane: Helical (142-166)",
+        "source_interval": "146-170",
+        "mapped_interval": "142-166",
+        "n": 25,
+        "mean": 0.0001054239273071,
+        "median": 0.0
+      },
+      {
+        "protein": "Kcnj13",
+        "feature": "Domain: Inward rectifier potassium channel C-terminal (178-315)",
+        "source_interval": "182-319",
+        "mapped_interval": "178-315",
+        "n": 138,
+        "mean": 0.000107760446659,
+        "median": 0.0
+      },
+      {
+        "protein": "Kcnj13",
+        "feature": "(unannotated / linker)",
+        "source_interval": "",
+        "mapped_interval": "",
+        "n": 70,
+        "mean": 0.0008694980825696,
+        "median": 5.960464477539064e-08
+      }
+    ],
+    "ahr2_structure": {
+      "n": 1001,
+      "core_n": 221,
+      "rho": 0.3851123258075925,
+      "core_rho": -0.03959668474294323
+    },
+    "kcnj13_structure": {
+      "n": 338,
+      "core_n": 268,
+      "rho": 0.0928055424623615,
+      "core_rho": -0.017809737647906342
+    }
+  },
+  "scope": "Saved-output reconstruction; no new model inference or biological validation."
+}

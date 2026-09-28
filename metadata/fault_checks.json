@@ -1,0 +1,10 @@
+{
+  "changed_file": {
+    "rejected": true,
+    "exit_code": 1
+  },
+  "missing_file": {
+    "rejected": true,
+    "exit_code": 1
+  }
+}

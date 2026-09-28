@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "checks": 34509,
+  "scope": "saved-output numerical consistency, not biological validation or historical inference provenance",
+  "vector_distance_checks": {
+    "8m": {
+      "pairs": 3428,
+      "max_abs_error": 4.1860140463303866e-07,
+      "n_vectors": 5614
+    },
+    "35m": {
+      "pairs": 3428,
+      "max_abs_error": 7.138303327888047e-07,
+      "n_vectors": 5614
+    },
+    "150m": {
+      "pairs": 3428,
+      "max_abs_error": 3.5930865217653155e-07,
+      "n_vectors": 5614
+    },
+    "650m": {
+      "pairs": 3428,
+      "max_abs_error": 3.6453956423515457e-07,
+      "n_vectors": 5614
+    },
+    "esm3": {
+      "pairs": 3428,
+      "max_abs_error": 4.0322585215246676e-07,
+      "n_vectors": 5614
+    }
+  },
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3"
+  }
+}
