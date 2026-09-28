@@ -1,8 +1,8 @@
 # Cross-model concordance and input-quality limits of protein language model divergence in two Danio species
 
-Submission data and code snapshot `v0.1.0-review.20260928` for the manuscript by Taichi Endoh, Gerry Amor Camer, Kotetsu Kayama, Daiji Endoh and Hiroki Teraoka.
+Public submission data and code release `v1.0.0` for the manuscript by Taichi Endoh, Gerry Amor Camer, Kotetsu Kayama, Daiji Endoh and Hiroki Teraoka.
 
-This version corresponds to the manuscript forwarded on 26 September 2026 and the submission figures supplied on 27 September. It replaces the outdated September 10 repository snapshot for purposes of checking this manuscript. It does not assert that journal submission or all-author approval is complete. The repository is currently **private**. A repository URL alone does not give an editor access.
+This version corresponds to the manuscript forwarded on 26 September 2026 and the submission figures supplied on 27 September. It replaces the outdated September 10 repository snapshot for purposes of checking this manuscript. It does not assert that journal submission or all-author approval is complete. The repository and release assets are **publicly accessible without a GitHub account**. Use release `v1.0.0` for the current manuscript; the `main` branch is an outdated September 10 archive, not the submission version.
 
 ## What can be checked
 
@@ -55,6 +55,10 @@ Retained protein sequences originate from NCBI RefSeq and UniProt. Accession ide
 
 The existing repository's MIT license is retained for code. Its existing CC BY 4.0 licensing statement is retained for author-generated computed outputs and figures (https://creativecommons.org/licenses/by/4.0/). Third-party sequences and resources retain their respective terms. Model weights and third-party journal PDFs are not redistributed. No new rights over third-party material are claimed.
 
-## Access during review
+## Public access and version identification
 
-The private GitHub repository requires explicit access. For confidential peer review, provide the matching ZIP through the journal submission system using the editorial office's designated confidential file channel; ordinary supplementary files may later be published, so the submitting author should label the review-stage status explicitly. Access is **not** automatically granted by this release, and no editor or reviewer has been invited. At public release, update the manuscript's availability wording to match the actual visibility. No DOI has been minted; the Git commit hash, release tag and SHA-256 checksums identify this snapshot.
+Use https://github.com/TaichiEndoh/danio-plm-divergence-limits/releases/tag/v1.0.0 for the public submission release. Download the ZIP and SHA256SUMS from that page. The release tag, Git commit and SHA-256 checksum identify the version. No DOI has been minted. `DATA_AVAILABILITY.md` contains the public availability statement.
+
+The earlier `v0.1.0-review.20260928` snapshot and its private-review wording describe the preparation stage; that snapshot is superseded by `v1.0.0`. The September 10 `main` branch retains old analyses and claims for historical traceability. Its values and completeness statements must not be used as the current manuscript results. The default `submission-20260928` branch and the `v1.0.0` tag contain the manuscript-matched version.
+
+The historical `main` branch also contains a raster excerpt of Supplementary Figure 5 from Podobnik et al., Nature Communications 11, 6230 (2020), DOI https://doi.org/10.1038/s41467-020-20021-6. It is attributed in that branch's `reports/external/README.md`. The source is licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); extraction into a raster figure is the format change. The figure remains the original authors' work and is not included in the current release archive.
